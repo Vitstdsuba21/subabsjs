@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>task7js</title><style>
+#move{
+  width: 50px;
+  height: 50px;
+  position: relative;
+}</style></head>
+<body>
+<div style="position:absolute" id ="move"><img src="download.png" alt="train"></div>
+</br></br></br></br></br></br><center><h1 style="color:green"><br><br><br>click belo buttons to handle animations</h1>
+<button onclick="myMove()">Start</button> 
+<button onclick="stop()">stop</button> 
+</center>
+<script>
+var id = null;
+function stop(){
+clearInterval(id);
+}
+var pos=0;
+function myMove() {
+  var elem = document.getElementById("move");   
+  id = setInterval(function(){pos++; 
+      elem.style.left = pos + 'px';
+if(pos>1000){pos=0;}}, 10);
+}
+</script>
+
+</body>
+</html>

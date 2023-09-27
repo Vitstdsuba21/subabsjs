@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>task2js</title>
+</head>
+<body>
+    <ul>
+        <li>Write a JavaScript function that returns a passed string with letter in <br>
+            alphabetical order.</li>
+        
+    </ul>
+<p>&nbsp Example string:&nbsp<input type="text" id="num"></p>
+<button type="submit" onclick="cal()">Alphabetic Order </button>
+<p id="output">Expected output:</p>
+<script>
+function cal(){
+let a=document.getElementById("num").value;
+function alpha(str) {
+
+    var arr = str.split(""); 
+    res = arr.sort().join("");
+    return res;
+  }
+  let b=alpha(a);
+  document.getElementById("output").innerHTML=b;
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task3js</title>
+    </head>
+    <body>
+        <p>
+          <ul><li>Write a JavaScript program to calculate multiplication and division of
+             two numbers(input from user)</li><br>
+         <li> Sample Form:</li></ul>
+          </p><center><table border="1">
+        1st Number:<input type="number" id="x" ></br></br>
+        2nd Number:<input type="number" id="y"></br></br>
+        <button onclick="f3()">Multiply</button>
+        <button onclick="f4()">Division</button>
+        <p>The Result Is:</p>
+        <p id="re"></p>
+        <script>
+            function f1()
+            {
+                var a=+(document.getElementById("x").value);
+                var b=+(document.getElementById("y").value);
+                document.getElementById("re").innerHTML=(a+b);
+            }
+            function f2()
+            {
+                let a=document.getElementById("x").value;
+                let b=document.getElementById("y").value;
+                document.getElementById("re").innerHTML=(a-b);
+            }
+            function f3()
+            {
+                let a=document.getElementById("x").value;
+                let b=document.getElementById("y").value;
+                document.getElementById("re").innerHTML=(a*b);
+            }
+            function f4()
+            {
+                let a=document.getElementById("x").value;
+                let b=document.getElementById("y").value;
+                document.getElementById("re").innerHTML=(a/b);
+            }
+        </script></table>
+        </center>
+    </body>
+</html>

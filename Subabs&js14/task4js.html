@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task4js</title>
+    </head>
+    <body>
+        <button onclick="date()">Show Date</button></br></br>
+        <p id="dat"></p>
+        <button onclick="time()">Show Time</button>
+        <p id="tim"></p>
+        
+        <script>
+            function time()
+            {
+                const d=new Date();
+                document.getElementById("tim").innerHTML=d;
+            }
+            function date()
+            {
+                const d= new Date();
+                var dateformat=d.getDate() + "/"+ d.getMonth() + "/"+ d.getFullYear();
+                document.getElementById("dat").innerHTML=dateformat;
+            }
+        </script>
+    </body>
+</html>

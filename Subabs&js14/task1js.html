@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>task1js</title>
+</head>
+<body>
+   <ul>
+      <li>Write a JavaScript function that reverse a number.</li>
+      <br>
+      <li>Sample Data and output:</li>
+             
+
+   </ul>
+<p>&nbsp;&nbsp;Example x:&nbsp<input type="text" id="num"></p>
+<button type="submit" onclick="cal()">Reverse </button>
+<p id="output">&nbsp;&nbsp;Expected output:</p>
+<script>
+function cal(){
+let a=document.getElementById("num").value;
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+let b=reverseString(a);
+document.getElementById("output").innerHTML=b;
+}
+</script>
+</body>
+</html>
